@@ -12,6 +12,10 @@ body {
     color: red;
 }
 
+.text-secondary {
+    color: #6c757d !important;
+}
+
 .text-white {
     color: #fff !important;
 }
@@ -168,6 +172,8 @@ body {
     background-color: rgba(black, 0);
 }
 
+
+
 /* wallet section  */
 
 .walletsection {
@@ -236,4 +242,195 @@ body {
 
 .topbox .card .listicontext li .anker .iconbox i {
     font-size: 20px;
+}
+
+
+
+
+/* account section  */
+
+.accountSection {
+    background: linear-gradient(90deg, #000, red);
+    height: 40vh;
+    border-radius: 0 0 30px 30px !important;
+}
+
+.accountSection .avtar {
+    width: 80px;
+    height: 80px;
+}
+
+.ac {
+    display: flex;
+}
+
+.accountSection .name {
+    font-size: 14px;
+    color: #fff;
+}
+
+.imagevips img {
+    width: 50px;
+}
+
+.accountSection .uid {
+    height: 20px;
+    padding: 2px 10px;
+    font-size: 14px;
+    border-radius: 30px;
+    line-height: 0px;
+    background-color: #feaa57 !important;
+}
+
+.logindate {
+    display: flex;
+    align-items: center;
+    gap: .2rem;
+}
+
+.logindate span {
+    font-size: 13px;
+    color: #fff;
+}
+
+.logoutbox {
+    padding-bottom: 70px;
+}
+
+.accountSection .topbox .card {
+    border-radius: 18px;
+    margin-top: 40px;
+}
+
+.accountSection .topbox .card .heading {
+    font-size: 14px;
+}
+
+.accountSection .topbox .card .payment {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.accountSection .topbox .card .listicontext li .anker i {
+    font-size: 20px;
+}
+
+.accountSection .topbox .card .listicontext li .anker {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+    gap: .4rem;
+    color: #000;
+    font-size: 14px;
+}
+
+.iconbox .card {
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 0;
+}
+
+
+.iconbox .card .icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.iconbox .card .icon i {
+    font-size: 20px;
+    color: red;
+}
+
+.iconbox .card .headingtextbox {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    text-decoration: none;
+    color: #000 !important;
+}
+
+.iconbox .card .headingtextbox .heading {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.iconbox .card .headingtextbox p {
+    font-size: 13px;
+    color: gray;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.notifiction .card {
+    border-radius: 10px;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: transparent;
+    border-radius: .25rem;
+}
+
+.notifiction .box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.notifiction .icon {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.notifiction .icon i {
+    font-size: 20px;
+}
+
+.notifiction .icon-text {
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+}
+
+.notifiction .icon-text .texthead {
+    font-size: 14px;
+    color: #000;
+}
+
+.accountSection .topbox .card .heading {
+    font-size: 14px;
+}
+
+.logoutbox {
+    padding-bottom: 70px;
+}
+
+.logoutbox .logoutbtn {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    border: 1px solid red;
+    border-radius: 30px;
+    height: 40px;
+    background-color: transparent;
+    justify-content: center;
+    gap: .5rem;
 }
