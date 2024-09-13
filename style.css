@@ -167,3 +167,73 @@ body {
 ::-webkit-scrollbar-track {
     background-color: rgba(black, 0);
 }
+
+/* wallet section  */
+
+.walletsection {
+    border-radius: 0 0 10px 10px;
+}
+
+.walletsection .borderprogress {
+    width: 100px;
+    height: 100px;
+    border: 7px solid red;
+    font-size: 16px;
+    font-weight: 700;
+    color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.walletsection .heading {
+    font-size: 13px;
+    color: #000;
+    text-align: center;
+    margin-top: 7px;
+}
+
+.walletsection .subheading {
+    font-size: 12px;
+    color: #000;
+    text-align: center;
+}
+
+.topbox .card .listicontext {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    justify-content: space-around;
+}
+
+.topbox .card .listicontext li {
+    width: 25%;
+}
+
+.topbox .card .listicontext li .anker {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .4rem;
+    text-decoration: none;
+    font-size: 12px;
+    color: #000;
+    text-align: center;
+}
+
+.topbox .card .listicontext li .anker .iconbox {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    box-shadow: 10px 10px 10px #eee;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.topbox .card .listicontext li .anker .iconbox i {
+    font-size: 20px;
+}
