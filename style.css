@@ -434,3 +434,213 @@ body {
     justify-content: center;
     gap: .5rem;
 }
+
+
+
+/* DEPOSITE SECTION  */
+.Deposite .innercard {
+    background: linear-gradient(90deg, #000, red);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 150px;
+}
+
+.Deposite .innercard .heading {
+    font-size: 15px;
+}
+
+.Deposite .innercard .walletpayment {
+    font-size: 20px;
+}
+
+.Deposite .nav {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.Deposite .nav .nav-item {
+    width: 29.33333%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Deposite .nav .nav-item .nav-link {
+    background-color: #fff;
+    text-decoration: none;
+    width: 100%;
+    flex-wrap: wrap;
+    height: 80px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Deposite .nav .nav-item .nav-link.active {
+    background: linear-gradient(90deg, #000, red);
+}
+
+.nav-pills .nav-link {
+    background: 0 0;
+    border: 0;
+    border-radius: .25rem;
+}
+
+.nav-link {
+    display: block;
+    padding: .5rem 1rem;
+    color: #0d6efd;
+    text-decoration: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
+
+.Deposite .nav .nav-item .nav-link .imagetext .image {
+    width: 30px;
+    height: 30px;
+    margin: auto;
+}
+
+.Deposite .nav .nav-item .nav-link.active .imagetext .text {
+    color: #fff;
+}
+
+.Deposite .nav .nav-item .nav-link .imagetext .text {
+    font-size: 14px;
+    white-space: nowrap;
+    color: #768096;
+}
+
+.depositesection {
+    border-radius: 12px;
+}
+
+.depositesection .depositecrad {
+    background-color: #fff;
+    border: 0;
+}
+
+.depositesection .depositecrad .card-heading {
+    font-size: 14px;
+    font-weight: 700;
+    color: #000;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.depositesection .depositecrad .depositelist {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+
+.depositesection .depositecrad .depositelist {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+
+.depositesection .depositecrad .depositelist li {
+    width: 31.25%;
+}
+
+.depositesection .depositecrad .depositelist li button {
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    color: red;
+    font-weight: 600;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    justify-content: space-around;
+}
+
+.depositesection .depositecrad .depositelist li button span {
+    color: #000 !important;
+}
+
+.depositesection .inputsection .input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+}
+
+.depositesection .depositecrad .inputsection .input-group .input-group-text {
+    background-color: #f7f8ff;
+    border: 0;
+    border-top-left-radius: 30px;
+    padding: 0 20px;
+    border-bottom-left-radius: 30px;
+    position: relative;
+}
+
+.depositesection .depositecrad .inputsection .input-group .input-group-text:after {
+    position: absolute;
+    content: "";
+    border: .4px solid #B6BCC8;
+    width: 1px;
+    height: 30px;
+    border-radius: 50px;
+    background: #b6bcc8;
+    left: 44px;
+}
+
+.depositesection .depositecrad .inputsection .depositebtn {
+    border-radius: 30px;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 400;
+    background: linear-gradient(90deg, #000 15.38%, red 98.73%);
+    width: 100%;
+}
+
+.depositesection .depositecrad .inputsection input {
+    background-color: #f7f8ff;
+    height: 50px;
+    border: 0;
+    color: red;
+    font-size: 15px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.depositesection .depositecrad .inputsection .depositebtn {
+    border-radius: 30px;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 400;
+    background: linear-gradient(90deg, #000 15.38%, red 98.73%);
+    width: 100%;
+}
+
+.depositesection .listitems {
+    list-style: none;
+    border-radius: 10px;
+}
+
+.depositesection .listitems li {
+    font-size: 13px;
+    color: #768096;
+    position: relative;
+    margin-bottom: 7px;
+}
+
+.depositesection .listitems li:after {
+    position: absolute;
+    content: "";
+    width: .43333rem;
+    height: .43333rem;
+    transform: rotate(45deg);
+    background: red;
+    left: -.86667rem;
+    top: .43333rem;
+}

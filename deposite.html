@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deposite</title>
+    <!-- FONT AWESOME CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- BOOTSTRAP CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="mainApp">
+        <div style="position: fixed; z-index: 9999; inset: 16px; pointer-events: none;"></div>
+        <div class="container-fluid subordinate headertop  bg-white rounded-0 py-2">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-4 px-0"><a class="btn hedbtn text-black shadow-none" href="/"><span><i
+                                class="fa-solid fa-angle-left text-center text-black"></i></span></a></div>
+                <div class="col-4 px-0">
+                    <div class="headertext text-center fw-bold text-black">Deposit</div>
+                </div>
+                <div class="col-4 px-0"><a class="headertext2 text-center fw-normal textblack text-decoration-none"
+                        href="/Depositehistory"><small class="text-black">Deposit History</small></a></div>
+            </div>
+        </div>
+        <div class="container-fluid Deposite my-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 px-1 px-sm">
+                        <div class="card innercard border-0 shadow-none">
+                            <div class="card-body">
+                                <div class="heading text-white mb-2"><span><i
+                                            class="fa-solid fa-wallet me-2"></i></span>Balance</div>
+                                <div class="walletpayment text-white fw-bold ms-3">₹-5</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-3">
+                    <ul class="nav nav-pills ms-2 mb-3 gap-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation"><button class="nav-link active" id="pills-UPI-x-QR-tab"
+                                data-bs-toggle="pill" data-bs-target="#pills-UPI-x-QR" type="button" role="tab"
+                                aria-controls="pills-UPI-x-QR" aria-selected="true">
+                                <div class="imagetext">
+                                    <div class="image"><img class="w-100 h-100"
+                                            src="data:image/png;base64,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"
+                                            alt=""></div>
+                                    <div class="text">UPI x QR</div>
+                                </div>
+                            </button></li>
+                        <li class="nav-item" role="presentation"><button class="nav-link" id="pills-USDT-Deposit-tab"
+                                data-bs-toggle="pill" data-bs-target="#pills-USDT-Deposit" type="button" role="tab"
+                                aria-controls="pills-USDT-Deposit" aria-selected="false">
+                                <div class="imagetext">
+                                    <div class="image"><img class="w-100 h-100"
+                                            src="data:image/png;base64,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"
+                                            alt=""></div>
+                                    <div class="text">USDT Deposit</div>
+                                </div>
+                            </button></li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade active show" id="pills-UPI-x-QR" role="tabpanel"
+                            aria-labelledby="pills-UPI-x-QR-tab" tabindex="0">
+                            <div class="row depositesection mb-3">
+                                <div class="col-12 px-1 px-sm-2">
+                                    <div class="card depositecrad">
+                                        <div class="card-body p-1 p-sm-2">
+                                            <div class="card-heading mb-4"><span><i
+                                                        class="fa-solid fa-wallet text-theme1"></i></span>Deposit amount
+                                            </div>
+                                            <ul class="depositelist ps-0">
+                                                <ul class="depositelist ps-0">
+                                                    <li><button class="btn shadow-none text-theme1"><span
+                                                                class="text-secondary fw-bold">₹</span> <span
+                                                                class="text-secondary">100</span></button></li>
+                                                    <li><button class="btn shadow-none text-theme1"><span
+                                                                class="text-secondary fw-bold">₹</span> <span
+                                                                class="text-secondary">1K</span></button></li>
+                                                    <li><button class="btn shadow-none text-theme1"><span
+                                                                class="text-secondary fw-bold">₹</span> <span
+                                                                class="text-secondary">5K</span></button></li>
+                                                    <li><button class="btn shadow-none text-theme1"><span
+                                                                class="text-secondary fw-bold">₹</span> <span
+                                                                class="text-secondary">10K</span></button></li>
+                                                    <li><button class="btn shadow-none text-theme1"><span
+                                                                class="text-secondary fw-bold">₹</span> <span
+                                                                class="text-secondary">50K</span></button></li>
+                                                    <li><button class="btn shadow-none text-theme1"><span
+                                                                class="text-secondary fw-bold">₹</span> <span
+                                                                class="text-secondary">1Lakh</span></button></li>
+                                                </ul>
+                                            </ul>
+                                            <div class="inputsection mb-4">
+                                                <div class="input-group mb-4"><span
+                                                        class="input-group-text fw-bold text-theme1"
+                                                        id="basic-addon1">₹</span><input type="text" id="depositAmount"
+                                                        class="form-control shadow-none fw-bold"
+                                                        placeholder="Please enter the amount" aria-label="Username"
+                                                        aria-describedby="basic-addon1" value=""></div><button
+                                                    id="depositButton" type="button"
+                                                    class="btn depositebtn py-2">Deposit</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-USDT-Bonus" role="tabpanel"
+                            aria-labelledby="pills-USDT-Bonus-tab" tabindex="0">
+                            <div class="card bg-white border-0">
+                                <div class="card-body p-1 py-3">
+                                    <div class="row mx-0 g-3">
+                                        <div class="col-12">
+                                            <div class="heading d-felx align-items-center gap-2"><span><i
+                                                        class="fa-solid fa-wallet text-theme1 me-2"></i></span>USDT QR
+                                                Code</div>
+                                        </div>
+                                        <div class="col-12  d-flex justify-content-center"><img class="img"
+                                                width="300px" height="300px"
+                                                src="https://kingclubadmin.netlify.app/DocumentImages/QRCODE/QRCODE_USDT.jpg">
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="heading d-felx align-items-center gap-2"><span><i
+                                                        class="fa-solid fa-wallet text-theme1 me-2"></i></span>USDT
+                                                Address</div>
+                                        </div>
+                                        <div class="input-group"><input type="text" id="upiid"
+                                                class="form-control shadow-none" placeholder="UPI Id"
+                                                aria-label="Username" aria-describedby="basic-addon1" disabled=""
+                                                value="TSZpthxY3xae4U1Q9i9br7VDHZwQaVbtkx"></div>
+                                        <div class="col-12">
+                                            <div class="heading d-felx align-items-center gap-2"><span><i
+                                                        class="fa-solid fa-wallet text-theme1 me-2"></i></span>Txn No.
+                                            </div>
+                                        </div>
+                                        <div class="input-group"><input type="text" id="utrno"
+                                                class="form-control shadow-none" placeholder="Txn No"
+                                                aria-label="Username" aria-describedby="basic-addon1" value=""></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row depositesection mb-3">
+                                <div class="col-12 px-1 px-sm-2">
+                                    <div class="card depositecrad">
+                                        <div class="card-body p-1 p-sm-2">
+                                            <div class="card-heading mb-4"><span><i
+                                                        class="fa-solid fa-wallet text-theme1"></i></span>Deposit amount
+                                            </div>
+                                            <ul class="depositelist ps-0">
+                                                <ul class="depositelist ps-0">
+                                                    <li><button class="btn shadow-none text-theme1"><span
+                                                                class="text-secondary fw-bold">₹</span> <span
+                                                                class="text-secondary">500</span></button></li>
+                                                    <li><button class="btn shadow-none text-theme1"><span
+                                                                class="text-secondary fw-bold">₹</span> <span
+                                                                class="text-secondary">1K</span></button></li>
+                                                    <li><button class="btn shadow-none text-theme1"><span
+                                                                class="text-secondary fw-bold">₹</span> <span
+                                                                class="text-secondary">5K</span></button></li>
+                                                    <li><button class="btn shadow-none text-theme1"><span
+                                                                class="text-secondary fw-bold">₹</span> <span
+                                                                class="text-secondary">10K</span></button></li>
+                                                    <li><button class="btn shadow-none text-theme1"><span
+                                                                class="text-secondary fw-bold">₹</span> <span
+                                                                class="text-secondary">50K</span></button></li>
+                                                    <li><button class="btn shadow-none text-theme1"><span
+                                                                class="text-secondary fw-bold">₹</span> <span
+                                                                class="text-secondary">1Lakh</span></button></li>
+                                                </ul>
+                                            </ul>
+                                            <div class="inputsection mb-4">
+                                                <div class="input-group mb-4"><span
+                                                        class="input-group-text fw-bold text-theme1"
+                                                        id="basic-addon1">₹</span><input type="text" id="depositAmount"
+                                                        class="form-control shadow-none fw-bold"
+                                                        placeholder="Please enter the amount" aria-label="Username"
+                                                        aria-describedby="basic-addon1" value=""></div>
+                                                <div class="input-group mb-4"><span
+                                                        class="input-group-text fw-bold text-theme1"
+                                                        id="basic-addon1">$</span><input type="text" id="depositAmount"
+                                                        class="form-control shadow-none fw-bold"
+                                                        placeholder="amount in USDT" aria-label="Username"
+                                                        aria-describedby="basic-addon1" disabled="" value=""></div>
+                                                <button id="depositButton" type="button"
+                                                    class="btn depositebtn py-2">Deposit</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-USDT-Deposit" role="tabpanel"
+                            aria-labelledby="pills-USDT-Deposit-tab" tabindex="0">
+                            <div class="card bg-white border-0">
+                                <div class="card-body p-1 py-3">
+                                    <div class="row mx-0 g-3">
+                                        <div class="col-12">
+                                            <div class="heading d-felx align-items-center gap-2">Wallet is locked</div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="heading d-felx align-items-center text-success gap-2">USDT
+                                                Balance: 0.00 USDT</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row depositesection mb-3">
+                                <div class="col-12 px-1 px-sm-2">
+                                    <div class="card depositecrad">
+                                        <div class="card-body p-1 p-sm-2">
+                                            <div class="card-heading mb-4"><span><i
+                                                        class="fa-solid fa-wallet text-theme1"></i></span>Deposit amount
+                                            </div>
+                                            <ul class="depositelist ps-0">
+                                                <ul class="depositelist ps-0">
+                                                    <li><button class="btn shadow-none text-theme1"><span
+                                                                class="text-secondary fw-bold">$</span> <span
+                                                                class="text-secondary">10</span></button></li>
+                                                    <li><button class="btn shadow-none text-theme1"><span
+                                                                class="text-secondary fw-bold">$</span> <span
+                                                                class="text-secondary">50</span></button></li>
+                                                    <li><button class="btn shadow-none text-theme1"><span
+                                                                class="text-secondary fw-bold">$</span> <span
+                                                                class="text-secondary">100</span></button></li>
+                                                    <li><button class="btn shadow-none text-theme1"><span
+                                                                class="text-secondary fw-bold">$</span> <span
+                                                                class="text-secondary">250</span></button></li>
+                                                    <li><button class="btn shadow-none text-theme1"><span
+                                                                class="text-secondary fw-bold">$</span> <span
+                                                                class="text-secondary">500</span></button></li>
+                                                    <li><button class="btn shadow-none text-theme1"><span
+                                                                class="text-secondary">Reset</span></button></li>
+                                                </ul>
+                                            </ul>
+                                            <div class="inputsection mb-4">
+                                                <div class="input-group mb-4"><span
+                                                        class="input-group-text fw-bold text-theme1"
+                                                        id="basic-addon1">$</span><input type="number"
+                                                        id="depositAmount" class="form-control shadow-none fw-bold"
+                                                        placeholder="amount in USDT" aria-label="Username"
+                                                        aria-describedby="basic-addon1" min="10" maxlength="10"
+                                                        value="0"></div>
+                                                <div class="input-group mb-4"><span
+                                                        class="input-group-text fw-bold text-theme1"
+                                                        id="basic-addon1">₹</span><input type="text" id="depositAmount"
+                                                        class="form-control shadow-none fw-bold"
+                                                        placeholder="amount in USDT" aria-label="Username"
+                                                        aria-describedby="basic-addon1" disabled="" value="0"></div>
+                                                <button id="depositButton" type="button"
+                                                    class="btn depositebtn py-2">Deposit</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row depositesection">
+                    <div class="col-12 px-1 px-sm-2">
+                        <div class="card depositecrad ">
+                            <div class="card-body p-1 p-sm-2">
+                                <div class="card-heading mb-4"><span><i
+                                            class="fa-solid fa-book text-theme1"></i></span>Recharge instructions</div>
+                                <ul class="listitems border p-4">
+                                    <li>If the transfer time is up, please fill out the deposit form again.</li>
+                                    <li>The transfer amount must match the order you created, otherwise the money cannot
+                                        be credited successfully.</li>
+                                    <li>If you transfer the wrong amount, our company will not be responsible for the
+                                        lost amount!</li>
+                                    <li>Note: do not cancel the deposit order after the money has been transferred.</li>
+                                    <li>Minimum Deposit- $10 USDT (use BEP-20). Deposit less than 10$ will not be
+                                        credited.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- BOOTSTRAP CDN  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
