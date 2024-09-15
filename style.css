@@ -817,15 +817,55 @@ body {
     background: linear-gradient(90deg, #000, red);
     border-radius: 8px 8px 0 0;
 }
+
 .transitionhistorysection .card .intext {
     background-color: #f7f8ff;
     padding: 7px;
     border-radius: 8px;
 }
+
 .transitionhistorysection .card .intext .innheading {
     font-size: 14px;
     color: #768096;
 }
+
 .transitionhistorysection .card .intext .innheading.payment.textGanger {
     color: #fb5b5b;
+}
+
+/* deposite history section  */
+
+.withdrwalcard .buttonfiledsection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: .5px solid #888;
+}
+
+.withdrwalcard .buttonfiledsection .depositbtn {
+    background-color: #18b660;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.withdrwalcard .text-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.withdrwalcard .text-section .heading {
+    font-size: 14px;
+    font-weight: 500;
+    color: #768096;
+}
+
+.withdrwalcard .text-section .subheading {
+    font-size: 13px;
+    color: #768096;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-weight: 500;
 }
