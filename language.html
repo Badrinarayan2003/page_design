@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Languages</title>
+    <!-- FONT AWESOME CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- BOOTSTRAP CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="mainApp">
+        <div style="position: fixed; z-index: 9999; inset: 16px; pointer-events: none;"></div>
+        <div>
+            <div class="container-fluid subordinate headertop bg-white rounded-0 py-2">
+                <div class="row align-items-center">
+                    <div class="col-auto text-center"><a class="btn hedbtn text-end shadow-none me-auto"
+                            href="/accounts"><span><i
+                                    class="fa-solid fa-angle-left text-center text-black"></i></span></a></div>
+                    <div class="col">
+                        <div class="headertext text-center fw-bold">Language</div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid languagesection mt-2">
+                <div class="row">
+                    <div class="col-12 px-1">
+                        <div class="form-check"><label class="form-check-label" for="flexRadioDefault1"><span><img
+                                        class="w-100 h-100"
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAUUSURBVHgB1ZpNTBtHFMf/axvKRxsZ5UNRaJslUVOiHjCqmmNjJ80pUQMKvaWEnEqUSDa3cqhsTjliS43anmjooYd+QKTeKsXmUAklbVlaRVSphJcGqiopYgnhQ21h+t4ah7V3MbtmF/BPWq93Ztc7b+bNf9/OswQ3kGNB1Ky0QUgt8EGGECFIIkjHwfQfo/mzVEi0AQqdMwI/lIimqNgmEsqFG1271AXhu0hHYWNVtPMMRu4/hDIxDYMBVndX6DOFKmTKNcYHp3DDm7vjDYd82bYzrf0oajzT1LgfwZfqtv4tgRBtA/gH2XR9aCAdDMlwiLMRoIaTa8TYNexekn40moETJPRFnikZ+6fbobmb/FoaosaHgvvqoD1dgl3ExCcog6QkST12TtzahU5ca6OGj3HjY51nESP/LkYmlxn6uBvhUyfgEjEhRJY2easTSxtw8oMofGIo7zLqzN/6xCxGnZnFyL2H+t5FZNrSghWtBJu7EPs7kMA2mXj7ELbD6tKy9uSb7xORZSVlVW9tALsN9Ty7Rn/ve+i79Z2p56PrrnR7eNQ0J2zLqAN8ErpOLyq3TeWmM3nC+tcG+CsbIG8iia3NLyO4r9ZyQjfQRJePHICbrAkkrWTWPALN3Vnk/M8V3BoBHXrwRRaVVmNRwHjw5qWbAz89mJK5151OyM3kNbw4BhcJCaDfKLEbLkSuM6s962IpzEnia6arE9cvIHHjgqmcDU5+2OGmjJaCJTacPzCOQDzf6z03v0Lm3u+mK9U/Zy1HhnteW1iG8ts0dghWyAx/yc0B6n1ygayTJ6xdZlOXVXjA059/jTT1XlPzIxAOvd6IzP3CXmfXiHZGkBpMF/Q8+3uouRFHSWnu3B0v8P18nT4iJKO/tN+Q4Q1dtCX0OdDTfira9o75gccGcPhQ7Nvc4Lg+H86bruG66Pt0zVsezwcJp3M71n0ga6UiXJZvVDGlgjpjnasyWkw1GgJvHDscfjD5l8kN9IlZYk7YrWv+rA9eUX1wf1cgUOW/aCxkd+nv7UDkStLUSJZRbWEJycG7BeW5kKOD1Otrk0odvvwuPKQlMPN4XjaWcAOu9g5a9nCG4hs2oBg+d5wmrMvRqB3C0rFzH81NPnpi+w3LKWW+0NhFC0xOPybZewVtZ1uQ/CJd0POlotH49fO6VFpFo1zH8srXZOpbVXiFRAbwy4rceMBSVdgAfvO2vFaS9HorV5tfWNGj0XWjZXiFyMmogId4KqPgWEgSmpNVBqfUHD0Cr5B8Pk2iyG6OvntmgMdoHEqoqFxUNmAclctUYObWl8q/2vwVVCD1J48PS/SiHKS1yTlUItVo8tGqsEZimkHloS/P596J13AHlYaEVG5HsBu1fPtpVgr4K0ZOtR9+bOJXyucF9DxIiMphIN9uyWAA9z4vau31UVBpi1AsxvuNZRUq0JazMymx+t+eltTa46/25RvPmJYWKdUzpqd+9iZqZElpMhaYF3dX0U6fGvYeGul+pLjQZEBkReF0qK30zo7ix1WrTOamCY50bSh28NK5uL+udlcn9XqCo48SHEk4hZQpJHK5qt1iTmyRYrJjhLxLRmSFjSSfE0OSYufge9lyXUeJ7vSLoTBJbBxeIUhpfEi5n+g2kK6hPJVPz166+cBj2U6RTCb16NgBZf/ZQzfEr/9PIlr2g4/DeI6EX8DnThu+8RMuoBtTRUas6Qa1kEEyCteDtPVNoTtO6fsqDJfbaCP/Aw67Kk5AEjuGAAAAAElFTkSuQmCC"
+                                        alt=""></span>English</label><input class="form-check-input" type="radio"
+                                name="flexRadioDefault" id="flexRadioDefault1" checked=""></div>
+                        <div class="form-check"><label class="form-check-label" for="flexRadioDefault2"><span><img
+                                        class="w-100 h-100"
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAATGSURBVHgB3ZpfaBxFHMd/s3tYSQLZS3woinETKOpDTCJVfKh4xQpCBXNvlmJtVCiVYNIX0adsnip5utDQkBcbKbW+aCpYEKo2UgXtg7n2QBEhblIqiK3ZQBpq6d74+01u17m9v7uzObd+YLjd2dm732/mO7/5ze4xiAF+yjDgtj4MGh/AMxM4DGK1USoetiiM5aHIrgC4i+yoY4MiDCIijL6jjQHnGTzNQBQYoDPatIozoR2QDB+H8h5WhM0DL06GdSSUA3yuayJ+wwMwZrEjf0023byZRnzWMEFjCyVttwIbO2pvM6OhNWrA54zXsFeWWmg8YdJvit9uQF0H8AtQMqjN7ZRMbQz6bSHbOtSUUMl4C5JAnXlR1QE+1z2MEWEBkgTjh9kR58OK6mCFmLCk+f9GNvVwcGIPBSd25Rxg7CIkz3jCEJEwQJkDQvcUAZIKRkI+22XJVb6EStL5DZKPAzt4LxtxHDpJebV3nhifgI3rcA9gFNsewmzAsuhEjMDa2prJ7o3e93A4573pdNrxRiADMVO4dgsKqxvQ2ZYSZc+jnRAjFGQoJ7OEA9j7YxAD65t3YfbC76LQsQw5sX+oG959uQd6HtgBqqDNz4nPuORz/seb8NYHv1YYHoSMP/5KH+x/shtUQRmlKYxmQBEy/uDMz2XGe9KhIrN642/Rlu6JgWFyQCnLJIPe+3jZPyeDSSZXp3bjsS7KyswzcPxAX5kzzYxWEwxqKJ8BUOD9z1aFEx6XrCHhwLe/rIt6KoXVW3D0hQfh83f6fSe8+aKIyRzHIf2bEJFHRr+v6EnS+fqm69dvSUkvc9Srp9FRwCYJmRAR6mXZ+DOjj4tPMlSup2PPeFlKVE+jo4DRcEdWD9nIPY91ishCUqkFXaMih9HCtQ1QID4Hok7IYJQKC91NSVGk9Lm/p8M/Jol4i1gt6BqtyLJsVB34X0ziPCgga54Mujr1lCjehCZOvrFL1FGIlaHUQhFbw+V4BRQgB+So8qy1BB9994eY1P097WI0SDa0Xrw0VfDvo3paL1RA269QLnQYF7NToICXSgSR9R2UGY2Qaj6EDoyQAwY6sAaKkBOUUgR1HoScOvn6rriSuV6xocGJTBv5DChCxpNUzi/drJpOe+uAauQpkTcMY8jbkVk4ChMQI94qTYXCbf/D7RAnJB/ckc17DhilPUESH6dUpbSltMVY0t7ykx/mptdv/xnrKGwX6fad89ndb9p07Ivx0k9nc+59KdpaJn4UdC3lPyf1c6HcyKKDepqGhMOLMJk78IXtnVc8G337zL4lDi19FxACZp84eKFXrqnIRjUtlYWtBC9pOLqm7w1WVjiwNTzsGCQNt3hMlo6HXq3t5U+X809n+zCyxv/AKwqk+5lDX+WqXdNr3XR5YXkxCU4I41/90qp1veFbytHTzw8zTSR7rQ6vDsnmxKGv5+s1auo16/jZF81i0b3I6W8ELYABy2uanq2m+cq2IRg9vc9iGmznau2gZKbrSSZI6L8a0GjcdV1M/njDd7ghEIanOjpyuey5UCE88p89yBG36GYY8LHICx+DRe7CN1EM//crYoCc6bp/Z+bG5vVBzvgAatjEbNGUmjgYzuilRB6vraDDeb2t/VxUo2X+AfJeIjiLYE8ZAAAAAElFTkSuQmCC"
+                                        alt=""></span>हिंदी</label><input class="form-check-input" type="radio"
+                                name="flexRadioDefault" id="flexRadioDefault2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BOOTSTRAP CDN  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
