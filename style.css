@@ -784,3 +784,28 @@ body {
 .withhdrawlist .headinglist i {
     color: red;
 }
+
+/* vip section  */
+
+
+.VipSection {
+    background: linear-gradient(90deg, #000, red);
+    height: 28vh;
+    border-radius: 0;
+}
+
+.VipSection .avtar {
+    width: 80px;
+    height: 80px;
+}
+
+.VipSection .imagevip {
+    width: 60px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.VipSection .name {
+    font-size: 14px;
+    color: #fff;
+}
