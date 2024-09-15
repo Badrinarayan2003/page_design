@@ -889,3 +889,55 @@ body {
 .notifictioncard .headingbox .heading span i {
     font-size: 20px;
 }
+
+/* game statistics section  */
+
+.naves {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.newsubordinate.navtabssection .nav .nav-item {
+    width: 33.3333%;
+}
+
+.newsubordinate.navtabssection .nav .nves {
+    width: 24.3333%;
+}
+
+.newsubordinate.navtabssection .nav .nav-item .nav-link {
+    background-color: #fff;
+    border-radius: 7px;
+    color: #768096;
+    width: 100%;
+    font-size: 0.8rem;
+}
+
+.newsubordinate.navtabssection .nav .nav-item .nav-link.active {
+    background: linear-gradient(90deg, #000, red);
+    border-radius: 7px;
+    color: #fff;
+}
+
+.mainesw {
+    text-align: center;
+    background: #fff;
+    padding: 30px;
+}
+
+.maineswq {
+    text-align: center;
+    color: coral;
+}
+
+.loe {
+    width: 30px;
+}
+
+.yt {
+    padding: 10px 15px 0 36px;
+}

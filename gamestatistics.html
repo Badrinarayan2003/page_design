@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>game statistics</title>
+    <!-- FONT AWESOME CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- BOOTSTRAP CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="mainApp">
+        <div style="position: fixed; z-index: 9999; inset: 16px; pointer-events: none;"></div>
+        <div>
+            <div class="container-fluid subordinate headertop bg-white rounded-0 py-2">
+                <div class="row align-items-center">
+                    <div class="col-auto text-center"><a class="btn hedbtn text-end shadow-none me-auto"
+                            href="/accounts"><span><i
+                                    class="fa-solid fa-angle-left text-center text-black"></i></span></a></div>
+                    <div class="col">
+                        <div class="headertext text-center fw-bold">Game Statistics</div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid newsubordinate navtabssection mt-2">
+                <div class="row">
+                    <div class="col-12 px-1">
+                        <ul class="nav naves nav-pills mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item nves" role="presentation"><button class="nav-link nlink active"
+                                    id="pills-Today-tab" data-bs-toggle="pill" data-bs-target="#pills-Today"
+                                    type="button" role="tab" aria-controls="pills-Today"
+                                    aria-selected="true">Today</button></li>
+                            <li class="nav-item nves" role="presentation"><button class="nav-link nlink"
+                                    id="pills-Yesterday-tab" data-bs-toggle="pill" data-bs-target="#pills-Yesterday"
+                                    type="button" role="tab" aria-controls="pills-Yesterday"
+                                    aria-selected="false">Yesterday</button></li>
+                            <li class="nav-item nves" role="presentation"><button class="nav-link nlink"
+                                    id="pills-week-tab" data-bs-toggle="pill" data-bs-target="#pills-week" type="button"
+                                    role="tab" aria-controls="pills-week" aria-selected="false">This Week</button></li>
+                            <li class="nav-item nves" role="presentation"><button class="nav-link nlink"
+                                    id="pills-ThisMonth-tab" data-bs-toggle="pill" data-bs-target="#pills-ThisMonth"
+                                    type="button" role="tab" aria-controls="pills-ThisMonth" aria-selected="false">This
+                                    Month</button></li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-Today" role="tabpanel"
+                                aria-labelledby="pills-Today-tab" tabindex="0">
+                                <div class="mainesw">
+                                    <h4 class="maineswq">₹ 0</h4>
+                                    <p>Total bet</p>
+                                </div>
+                                <div class="row mx-0">
+                                    <div class="col-12">
+                                        <div class=" text-theme1"><img
+                                                src="data:image/png;base64,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"
+                                                class="loe" alt="lottery"> WinGo</div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="yt">
+                                            <p class="text-black">Total bet</p>
+                                            <p class="text-black">Number of bets</p>
+                                            <p class="text-black">Winning Amount</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 text-end">
+                                        <div class="yt">
+                                            <p class="text-secondary">₹ 0</p>
+                                            <p class="text-secondary">0</p>
+                                            <p class="text-warning">₹ 0</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mx-0">
+                                    <div class="col-12">
+                                        <div class=" text-theme1"><img
+                                                src="data:image/png;base64,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"
+                                                class="loe" alt="lottery"> TRX WinGo</div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="yt">
+                                            <p class="text-black">Total bet</p>
+                                            <p class="text-black">Number of bets</p>
+                                            <p class="text-black">Winning Amount</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 text-end">
+                                        <div class="yt">
+                                            <p class="text-secondary">₹ 0</p>
+                                            <p class="text-secondary">0</p>
+                                            <p class="text-warning">₹ 0</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-Yesterday" role="tabpanel"
+                                aria-labelledby="pills-Yesterday-tab" tabindex="0">
+                                <div class="mainesw">
+                                    <h4 class="maineswq">₹ 0</h4>
+                                    <p>Total bet</p>
+                                </div>
+                                <div class="row mx-0">
+                                    <div class="col-12">
+                                        <div class=" text-theme1"><img
+                                                src="data:image/png;base64,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"
+                                                class="loe" alt="lottery"> WinGo</div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="yt">
+                                            <p class="text-black">Total bet</p>
+                                            <p class="text-black">Number of bets</p>
+                                            <p class="text-black">Winning Amount</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 text-end">
+                                        <div class="yt">
+                                            <p class="text-secondary">₹ 0</p>
+                                            <p class="text-secondary">0</p>
+                                            <p class="text-warning">₹ 0</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mx-0">
+                                    <div class="col-12">
+                                        <div class=" text-theme1"><img
+                                                src="data:image/png;base64,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"
+                                                class="loe" alt="lottery"> TRX WinGo</div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="yt">
+                                            <p class="text-black">Total bet</p>
+                                            <p class="text-black">Number of bets</p>
+                                            <p class="text-black">Winning Amount</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 text-end">
+                                        <div class="yt">
+                                            <p class="text-secondary">₹ 0</p>
+                                            <p class="text-secondary">0</p>
+                                            <p class="text-warning">₹ 0</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-week" role="tabpanel" aria-labelledby="pills-week-tab"
+                                tabindex="0">
+                                <div class="mainesw">
+                                    <h4 class="maineswq">₹ 0</h4>
+                                    <p>Total bet</p>
+                                </div>
+                                <div class="row mx-0">
+                                    <div class="col-12">
+                                        <div class=" text-theme1"><img
+                                                src="data:image/png;base64,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"
+                                                class="loe" alt="lottery"> WinGo</div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="yt">
+                                            <p class="text-black">Total bet</p>
+                                            <p class="text-black">Number of bets</p>
+                                            <p class="text-black">Winning Amount</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 text-end">
+                                        <div class="yt">
+                                            <p class="text-secondary">₹ 0</p>
+                                            <p class="text-secondary">0</p>
+                                            <p class="text-warning">₹ 0</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mx-0">
+                                    <div class="col-12">
+                                        <div class=" text-theme1"><img
+                                                src="data:image/png;base64,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"
+                                                class="loe" alt="lottery"> TRX WinGo</div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="yt">
+                                            <p class="text-black">Total bet</p>
+                                            <p class="text-black">Number of bets</p>
+                                            <p class="text-black">Winning Amount</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 text-end">
+                                        <div class="yt">
+                                            <p class="text-secondary">₹ 0</p>
+                                            <p class="text-secondary">0</p>
+                                            <p class="text-warning">₹ 0</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-ThisMonth" role="tabpanel"
+                                aria-labelledby="pills-ThisMonth-tab" tabindex="0">
+                                <div class="mainesw">
+                                    <h4 class="maineswq">₹ 0</h4>
+                                    <p>Total bet</p>
+                                </div>
+                                <div class="row mx-0">
+                                    <div class="col-12">
+                                        <div class=" text-theme1"><img
+                                                src="data:image/png;base64,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"
+                                                class="loe" alt="lottery"> WinGo</div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="yt">
+                                            <p class="text-black">Total bet</p>
+                                            <p class="text-black">Number of bets</p>
+                                            <p class="text-black">Winning Amount</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 text-end">
+                                        <div class="yt">
+                                            <p class="text-secondary">₹ 0</p>
+                                            <p class="text-secondary">0</p>
+                                            <p class="text-warning">₹ 0</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mx-0">
+                                    <div class="col-12">
+                                        <div class=" text-theme1"><img
+                                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABOCAYAAACOqiAdAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAbKSURBVHja7FzbkeowDN0S6GBLgA5SQkpICdimAEpICZRACZRACS7BJeh+2Ls3cSRbcpTA7LAz/loIyYkeR0eyvwDg67Pk6wPCB7gXArfnHxhzAOeOYC9nMG4E4+5gnU8LZsuYw+y7zn1/veDvZcCBMYcE1AOsCwuAsGXcIwdt+j8w9grWdX8OuAwsaFjD7HrWDTjA1oNxty2tcRfgwJhDsobQCBiAdc/lda3nWOkWVrgpcEqAxZVZT7ou//vKAG4GHFjXsSyCtS5nJLa1vQwlF1YHLlqZG3UAcwDGXpe/0Rwj/8fALF6+FDhw7lvPyijQhC5as76M3rwGuJjlgsJDBbCu3xS0qfU1uK6+qzr3DcbdVljBiFnBJqDNwTu+R3KIAI5g3ZNDNcDYK+U2qjGzZOUC8FYBl8CppvlIfF0Xya+9JusZwLq+FGMm14ddFhJT1YFbJAJFpj7hf7DjEsW6duAoS4jxrWvnfm5USjCbWVszcCxriPXiHezlDNZ1C+bv3HdURNyQwN4frFplUgojUuBirHrhA25ibe6Oqi7GjSrApdjj/xxwZdWlUwBuF1oQqYFxj/R7MftGS5+sX9Hzoe6mUwplrEd5JRe4mWi4ncs8YoKQlUHp3oZGEANCneqlHxu4NdUAI6O11oyrK5dcVcZjeFhI9hzgNrM24x5bqbTpnjlC542pKl/lwG1ibXONjag2+miN7pZi3s+6cfsLVeqUA0d/fmZ1VeA2sLZiQR3BEsaqCulOXJIUFfhA/3/ZdeAo01Uua2JwX0l1CipHItuh7qpFkB984PR4W8BA26SQp6QpzAi4MS7r6xaBA2NOig/Uo1awFaEmBErEop5ZbD1xYnMZuJLZrpXAKdfZA7y5hQfEMkPNXSsWp+JCnqAKgVE9jGBdP334ZBF8soswf+T3O0EzKIAxh4rFqVjEIKx32R0odo8jI7mL7JlztFjileLciZ5W0ohv6A0X6t2GrhNfrbFnhCcGtHqY/o+IcyXgDgrEd2BXIFl2kynGLPFhWTbNOVvH5nPGjTwC3AagF9S7vtrwiXFnWGV1uUtOC3rkxZElm3F3qTriJWxeUO8OAsI6EuBBm9VNEkFGntM94HFYLmSyNbmOycgDAcST+/AC4Mr3hcVk/L59IcbRXStez6HwZivjW1UgjDnJSGuhNl24uT2znpcErtL9qYD3FADhCeC84KWMrbEXES7x0jB/3ipwZQY+ssTBmkWgrke4dh7gG9Sb6kuinnca51nAFZQH1AWXhXPX0tNMBPcJ1nlsYqB5Bq/UY2AM44Cx1xJwnjNfgZZPUsWBcA9B5/+UfoMH4iJGUs31AnhC4PDaL/d/OXDN41aNWV9Wm2J0qZBV7+wGbl6iLIHrZZ2uyxmToQSVxF3WtWcIBhnLKAE3yt7atGheAHtaqxRPBnH8JOb1hX5FaE4ODAALrlrR4sqFcS3ly0Arj8gOhNXdFKgSKcquVUfoWMEnwPXyq5w5g4hnSjN+g6x0qGpd5UZHJ642UGGA8QJ5Ejkq4Teo3EFDAQ6FvVWjGIAsNnK/J3BVv3r0P93j+p7DkkwGUsuv3SStfATxdzD3lik2xVBS63IdxGLlPEN1sgoCFzNJOkODduWQ7KaecboGo69aM+Vsu9AsQaDS+U2il2WZNY5D2Mu58LmjYLOJb20FMDr5NVqSq6oL8tkh1MRzewMN/YfAim1tEwqDoJNfya5L4B7Vhk25pxrEmzXKpZaUF/LkKN60Em8QhXZtRBysjhrUp8AZ2zopOey2uvHEA65odR1T8u4Iy/OVyfXbT+2a1sAcYfVCfifjl/yJTMLqlplKNo4gbQIxuRYqjtLNF3k1wwcODepPoWBZHvNaD6AnC//2WRW/fuo8B2bR+GC4QUV3m6i+0qHrviHbQks517ZBZJq9WnStgjhITJKPvyOs0aKe0RXTKH9lZGLVxFUhQTUAl1xWo3zZ8IgLhYFFr7+XK+7D+lYZsDbWg7FX3Z2HqzeyVGV8lY2+agPWjTsPf/fDao3EMgi4DnD64/xhsvOw/9l9OFnHjM9pTnbyZvPWAscSPPddz8k+iGG2okhwp7P2hV0na7nqUZ3EyunIIBlKRPZ/ic4hUTvMYJMKoOrOOnvAWq6xwYEtlZ7mm+8BewlwwsZM40EulT1gc+J8z/aA3bXOmNv63BFN66O3G82b1Zx69n2BUy/eUV1NdMxaUN0Xu9eJhSsAJHQ19oiXKmC7Azd/YBFh7tpGadPwjjJgLwMuI859AtErHIMWtgbrLYAjsmH/y+7Rrv5sWilJS5czGHPaAyzefNxnfU6e/gD3puvfAIulnuwEouCFAAAAAElFTkSuQmCC"
+                                                class="loe" alt="lottery"> TRX WinGo</div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="yt">
+                                            <p class="text-black">Total bet</p>
+                                            <p class="text-black">Number of bets</p>
+                                            <p class="text-black">Winning Amount</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 text-end">
+                                        <div class="yt">
+                                            <p class="text-secondary">₹ 0</p>
+                                            <p class="text-secondary">0</p>
+                                            <p class="text-warning">₹ 0</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BOOTSTRAP CDN  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
