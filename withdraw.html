@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>withdraw</title>
+    <!-- FONT AWESOME CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- BOOTSTRAP CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <div class="mainApp">
+        <div style="position: fixed; z-index: 9999; inset: 16px; pointer-events: none;"></div>
+        <div class="container-fluid subordinate headertop  bg-white rounded-0 py-2">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-4 px-0"><a class="btn hedbtn text-black shadow-none" href="/accounts"><span><i
+                                class="fa-solid fa-angle-left text-center text-black"></i></span></a></div>
+                <div class="col-4 px-0">
+                    <div class="headertext text-center fw-bold text-black">Withdraw</div>
+                </div>
+                <div class="col-4 px-0"><a class="headertext2 text-center fw-normal textblack text-decoration-none"
+                        href="/withdrawhistory"><small class="text-black">Withdrawal History</small></a></div>
+            </div>
+        </div>
+        <div class="container-fluid withdrawCard my-2 mb-2 pb-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 px-1 px-sm">
+                        <div class="card innercard border-0 shadow-none">
+                            <div class="card-body">
+                                <div class="heading text-white mb-2"><span><i
+                                            class="fa-solid fa-wallet me-2"></i></span>Wallet balance</div>
+                                <div class="walletpayment text-white fw-bold ms-3">₹-5</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-2">
+                    <ul class="nav nav-pills ms-2 mb-3 gap-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation"><button class="nav-link active" id="pills-BankCard-tab"
+                                data-bs-toggle="pill" data-bs-target="#pills-BankCard" type="button" role="tab"
+                                aria-controls="pills-BankCard" aria-selected="true">
+                                <div class="imagetext">
+                                    <div class="image"><img class="w-100 h-100 imgfil"
+                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGCAYAAABxLuKEAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALPSURBVHgB7ZvZkdNAEIb/lgnARIAywERgEwFksEsE6wOe2Xfw2kSAyGBDEBHgjQCRgQjAalqHqyh7Woflha1Rfw+WNIfK89dojp5uwDAMwzAMwzCGALUtyPP5GDR6A+aJPIZSc1JlhXiapPJfk+IK2oF4hyCIab3+1aZyozAiSAgEGyn5Fj7AiDCi2yaBaoXh5fKlvCiW2zH8IpWWz+ju7kEroApT9BQKfsA/UQ6kCGii9ZxArxd8hL+i5IyxzyIt09ljqt7yE0OAs+e03abHye4eQzTFUKDRlSvZLQzTDEOhXH6coPWYEEOBqIMw4BCDgZ0TjDYr+TwbHWPCKHQSZvCYMAomjIImTIrh4GyrssDDFkOBce9KVnpM9kWr4BcUS1sXzpy6ajx/P5OKIbwkSGj7OYZhGMZ/oH7wXSzEYBWE8JIsoc3mu5armzZBX8VWMYPPsJw1gV+3N23mhnDfRckpjFRyZuZAseB5crjWBqWtZo8xe0w3TBgFE0bBhFEwYRRMGAUTRsGEUXiGPpS24YeaElNZWV4fpSWy3NzKPuU3uuN636PQQxi6pu36W0OhiBcfImAfV88JOHvl2rS1JOL5MncTm+OROfdTSmnTKEoBbT7lW/ukeGBEPUSpEEP9P+Dcc6WujRsfXftw6X1ch3Ol5oaHYsS6Qgt4sbrBoTEyPvBq9QK9CG5wWZxtdY8xzPIdN7kAU/69z3D4TNyIvYP/3tbnDoGx1ItwFjzL3VBxSUon6ROUwZfEsoUJmjhnhii9tW5xFq0d2bu8M3Glaq5mOwwFyk8jT1HOrvetZhwvCArPd0eyg3JKdSvpFfnyobNnOO/fwW93kDQPttAyVWGk1yTVDOCjOGWQRU0ESu3Kt4jOkCV8EcriDTJE5MEVNZEnRSm0pIwvGE0LT+rSaXhc+QM/1ROFpPhl7Kp7ESK7778lMQzDMAzDMAyf+ANvUMciKd3CqQAAAABJRU5ErkJggg=="
+                                            alt=""></div>
+                                    <div class="text">Bank Card</div>
+                                </div>
+                            </button></li>
+                        <li class="nav-item" role="presentation"><button class="nav-link" id="pills-USDT-tab"
+                                data-bs-toggle="pill" data-bs-target="#pills-USDT" type="button" role="tab"
+                                aria-controls="pills-USDT" aria-selected="false">
+                                <div class="imagetext">
+                                    <div class="image"><img class="w-100 h-100"
+                                            src="data:image/png;base64,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"
+                                            alt=""></div>
+                                    <div class="text">USDT</div>
+                                </div>
+                            </button></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" type="button" role="tab"
+                                aria-selected="false" href="/Updatebank">
+                                <div class="imagetext">
+                                    <div class="image"><img class="w-100 h-100" src="/images/bank-DZRsnqdj.png" alt="">
+                                    </div>
+                                    <div class="text">View Bank</div>
+                                </div>
+                            </a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" type="button" role="tab"
+                                aria-selected="false" href="/Updatecurrency">
+                                <div class="imagetext">
+                                    <div class="image"><img class="w-100 h-100"
+                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGCAYAAABxLuKEAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAbfSURBVHgB7ZxNbBRlGMf/7zu7QkHtmiAQDnQPqNGD3YPBeJDWxJgYo9AK3rQl6s0AelKodNEWPCmQeDRsuZiY0pZ4MSaGLZ4MGnYx0SAk7DbRyMdhGgNS25nX53mn03Y/2J3Znd2ynf6SaXdmdufjP8/7PM/7NQLNZOyzTth2Qio7IYSIKyDBmwVUfOnXFEQOSplCwFQKGVvQujTS6P0wiyYh0EhOJWN4KNpnQO1iEehkMdQBHcMUEGkLaoKuPI3XB/JoEI0RZuxol2HbSfrUjYYiJiylUtgzcBYBE6wwo0f7JFSyuGg0GgWVsyGS2D0wgoAIRhiyEGmrVLMFKSZIgeoT5utjcSNqnULDi4w/yBelbIFkPT5Iokbk+PB+GbUu4j4ThaGn3W9QNMPoUB9qxL/FUKSRD0cGhcIBtAAU7o/bewbeh0/8CUNFR0asccovEmghdC4ksctP0fIuDIsStc8tt4OtFe2Yhej2Ko43YVpcFBc/4lQXZoWI4uJVnKpRSfuUFSIKQ1WKuLQxoasrFagojDwz9EWrOVov8D3JByODFb9zzz2U3huwU1jBUC3+gL370Ily+8oLo/2KddFPbfjwk8/j8FM7sJzkbpvY9t2Xfn5iWlwiyvibskWJnO1gvU0ELUKMMuRUuR2lwlARImfbj/DQzZXg4o2ydINKImRI20qVbCtYc6wljpDBIby4wikLV8JnLS7F974ozNjQzjBai4u2miW+ZkEYwxb9CDnz7dQaJ49xWuKuoQ7i69rRsd57hI9F1+LMc7srfmfyZh6f/P4jvGLO3kXWvI56sP6ZewR7k2ZEr0VVF+okd2daL15hIase8/a0FqeZSOrusYETuihxvw9W0Yh5LRwfI1Q3VnHRlWaJb4YTVJsKQ/rvlRhrEpFRdMFCU4hF16CdnC77l/j66j4m9sAadG3Yqp2qOTuDvA8fVg+GVJ0R2MHmLnzzfDMcoTrbN2sBeOlY5xgl3+D07L8w/5upeqyuR+NIxDaRmG36uM7v7yJPtWh29ByBsubfzufpGwgKajxPRKgbpK6GKL7gnVsex44NcXRv3KoFyN8xkb4xpf+fv5VHZvq6FoLXXdhqrr78XsVjn/3zMt7+5duCc7HgcTpHB1sdLfsee5YE7FgI1Wf/ukzLH3VZF4/EiFCvXayW7ki+yH3bttOFbdc5CYfVE1cu4HQ+q62iEfBxTW0lpbkKi9PX8TQ+73xJL3w9I7ksTk/9Cr8o2AnKY0RMd2r6gJ/Uzy++owVhPsh+j5NXL2A5YSF0Qvjbebq2d7VQvMTJwvwkiS6ylvoRt9S5ojD1ZptBwkWKfZhLLa2KXG+KoAbYRN8is3X5oetNx2zzlzB5a8rzcZb6nHJM0016hYs2X9N+Ktquo2dOXvkJtSCM0SF/5WgeLk5fPfOqNteluE6QzdqNGOwIg/Q77HgT7RsXIp/r9AuvY4aK1WTNRbxmYVxYoNe2PKEjU7FIS3FM/K6u/zDuf6bYcpx8p23xHBTueVvsgbUlAhSeY0ZHstNTl+quYwk5OnwtqHYYvvjO2GZ6ipu0SO66m4MEhZsLZcwbOqfJUjqQvjlVtWh6hXsrAxWmEvyk3WxXN1HQUs0x8lNnv8Xo2jtZmU4OG5QOuFARykQoh8nwtaLB8NN0n+gkHHGqCcNCjMwL00xIE1MqoXJYpQAeTyOFJZo2qLhVEAYJYzlFaZUlWHMiK/HGoQwVqmDc+crAZE2cFjy1ajWLiDT/1cIoQ0xgFQeptBZaGBuzgQ01b3WsNUjzf6co9STZx6QReqjkvOKMlVnoibSkTCLsSJVa+LiwsffgJHjCVFihRNfqXZzeUzgMRIgkwkrRvRcIY/UeHAml1TjWUhCASkZUWSKEox7KlJTSMXjsa8IUoQRSxdbClB21aRnG3lBUE+gerbVIlttVvjG856OcGh9OCksdRwMJsjG8JgQOuHlL6a4K6CHzLTJhyy/VJnhVnEtgy7kjagU2S3CrZbVZb5Vnn1BVwTaMnhUVwik0z7Wh6kApb93W48fihm2fI/uLo5XhfGWt6L6XXyn4KrzS6uL4EIXxPr2YIhVVNF9oRZ/DPsWPKPO/8U8rRSsdfSJzR+abVjxT80x9Y+xoH5R9/L4dv6dfsSKS95qoVf3n9eD4nUF6LP24v0hbbej3U3SKCeSlF471qOSyO2ZysMLG3rk9H6dRJ4G+JmXZBOLeVKohl6sM1nxINABj9NNdEJJFavSI87RQ6kgQFlJMQ4RZgH2QUl2OQKq7bkfNNX7qA+PuHt2z4TPS+DtVE4mODyeoS5hfwhPnsbRKT0gVsbIv74KeH52hfTlF/esyisxsz6Gm5VD/A4LQ+CzEfIeoAAAAAElFTkSuQmCC"
+                                            alt=""></div>
+                                    <div class="text">View USDT</div>
+                                </div>
+                            </a></li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-BankCard" role="tabpanel"
+                            aria-labelledby="pills-BankCard-tab" tabindex="0">
+                            <div class="row g-3 mx-0 conactusdt">
+                                <div class="col-12">
+                                    <div class="card border-0">
+                                        <div class="card-body p-2">
+                                            <div class="inputcontrol mb-2">
+                                                <div class="icon">₹</div><input
+                                                    class="form-control shadow-none border-0 ps-5" type="text"
+                                                    placeholder="Please enter withdrawal amount" value="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12"><button type="button"
+                                        class="btn text-white text-center w-100 py-2 rounded-pill maingridentcolor1">Withdraw</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-USDT" role="tabpanel" aria-labelledby="pills-USDT-tab"
+                            tabindex="0">
+                            <div class="row g-3 mx-0 conactusdt">
+                                <div class="col-12">
+                                    <div class="card border-0">
+                                        <div class="card-body p-2">
+                                            <div class="heading mb-2"><span><img class="w-100 h-100"
+                                                        src="data:image/png;base64,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"
+                                                        alt=""></span>Select amount of USDT</div>
+                                            <div class="inputcontrol mb-2">
+                                                <div class="icon">₹</div><input
+                                                    class="form-control shadow-none border-0 ps-5" type="text"
+                                                    placeholder="Please enter withdrawal amount" value="">
+                                            </div>
+                                            <div class="inputcontrol"><label for="turnover text-theme1"></label>
+                                                <div class="icon ico2">$</div><input id="turnover"
+                                                    class="form-control shadow-none border-0 ps-5" type="text"
+                                                    placeholder="UDST amount" disabled="" value="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12"><button type="button"
+                                        class="btn text-white text-center w-100 py-2 rounded-pill maingridentcolor1">Withdraw</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid withhdrawlist mt-4">
+                        <div class="container">
+                            <div class="row g-2">
+                                <div class="col-12">
+                                    <div class="list">
+                                        <div class="headinglist"><span><i
+                                                    class="fa-solid fa-money-bill-trend-up"></i></span>1. Withdrawal
+                                            Limit 110 ₹ to 1 Lakh Maximum.</div>
+                                    </div>
+                                    <div class="list">
+                                        <div class="headinglist"><span><i class="fa-solid fa-wallet"></i></span>2.
+                                            Remaining Betting Amount For Withdrawal: ₹ 0</div>
+                                    </div>
+                                    <div class="list">
+                                        <div class="headinglist"><span><i class="fa-solid fa-coins"></i></span>3.
+                                            Withdrawal 24/7</div>
+                                    </div>
+                                    <div class="list">
+                                        <div class="headinglist"><span><i
+                                                    class="fa-solid fa-hand-holding-dollar"></i></span>4. Daily
+                                            Withdrawal Limit: 3 Time</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- BOOTSTRAP CDN  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

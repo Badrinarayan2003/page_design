@@ -8,6 +8,10 @@ body {
     background-color: #000;
 }
 
+.headertext2 {
+    font-size: 14px;
+}
+
 .text-theme1 {
     color: red;
 }
@@ -643,4 +647,140 @@ body {
     background: red;
     left: -.86667rem;
     top: .43333rem;
+}
+
+
+/* withdraw section */
+.withdrawCard .innercard {
+    background-image: url(/images/TotalAssetsBg-BNnDCcxv.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 150px;
+}
+
+.withdrawCard .innercard .heading {
+    font-size: 15px;
+}
+
+.withdrawCard .innercard .walletpayment {
+    font-size: 20px;
+}
+
+.withdrawCard .nav .nav-item .nav-link.active {
+    background: linear-gradient(90deg, #000, red);
+}
+
+.withdrawCard .nav .nav-item .nav-link {
+    background-color: #fff;
+    text-decoration: none;
+    width: 85px;
+    height: 80px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.withdrawCard .nav .nav-item .nav-link .imagetext .image {
+    width: 30px;
+    height: 30px;
+    margin: auto;
+}
+
+.withdrawCard .nav .nav-item .nav-link.active .imagetext .image .imgfil {
+    filter: brightness(.5);
+}
+
+.withdrawCard .nav .nav-item .nav-link.active .imagetext .text {
+    color: #fff;
+}
+
+.withdrawCard .nav .nav-item .nav-link .imagetext .text {
+    font-size: 14px;
+    white-space: nowrap;
+    color: #768096;
+}
+
+.withdrawCard .conactusdt .inputcontrol {
+    position: relative;
+}
+
+.withdrawCard .conactusdt .inputcontrol .icon {
+    position: absolute;
+    left: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #f95959;
+    top: 10px;
+}
+
+.withdrawCard .conactusdt .inputcontrol .icon.ico2 {
+    top: 36px;
+}
+
+.withdrawCard .conactusdt .inputcontrol label {
+    font-size: 13px;
+    margin-bottom: 10px;
+    color: #f95959;
+}
+
+.withdrawCard .conactusdt .inputcontrol input {
+    background-color: #f7f8ff;
+    height: 50px;
+    border-radius: 8px;
+    color: #f95959;
+}
+
+.withdrawCard .conactusdt .heading {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.withdrawCard .conactusdt .heading span {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.withhdrawlist {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px 5px;
+    margin-bottom: 80px;
+    border: .05333rem solid #f95959;
+}
+
+.withhdrawlist .list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: .5px solid red;
+    text-decoration: none;
+    padding: 15px 0;
+    cursor: pointer;
+}
+
+.withhdrawlist .headinglist {
+    font-size: 15px;
+    color: red;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-weight: 600;
+}
+
+.withhdrawlist .headinglist span {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.withhdrawlist .headinglist i {
+    color: red;
 }
