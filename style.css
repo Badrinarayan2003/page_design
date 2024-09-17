@@ -988,3 +988,598 @@ body {
     background-color: red;
     border-color: red;
 }
+
+/* WINGO  */
+.colorgameheader .logo {
+    width: 80px;
+    height: auto;
+}
+
+.kinname {
+    font-family: ui-sans-serif;
+    margin-right: 21px;
+    font-size: 23px !important;
+}
+
+.voiceimage {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.withdrwal {
+    background-color: rgb(255, 255, 255);
+    border-radius: 0px 0px 16px 16px;
+}
+
+.withdrwal {
+    height: 35vh;
+    background: linear-gradient(90deg, rgb(0, 0, 0), red);
+}
+
+.withdrwal .innercard {
+    border-radius: 20px;
+}
+
+.withdrwal .innercard .walletpayment {
+    font-size: 17px;
+}
+
+.withdrwal .innercard .heading {
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.withdrwal .innercard .walletbtn1,
+.walletbtn2 {
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    height: 40px;
+    box-shadow: none;
+    border-radius: 30px;
+}
+
+.withdrwal .innercard .walletbtn1,
+.walletbtn2:hover {
+    color: rgb(255, 255, 255);
+}
+
+.walletbtn2 {
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    height: 40px;
+    border-radius: 30px;
+}
+
+.withdrwal .innercard .walletbtn2 {
+    background-color: green;
+    box-shadow: none;
+}
+
+.lotterysectionsection3 .tabsmanin {
+    background-color: rgb(255, 255, 255);
+    border-radius: 13px;
+}
+
+.lotterysectionsection3 .tabsmanin .nav-item {
+    width: 25%;
+}
+
+.lotterysectionsection3 .tabsmanin .nav-item .nav-link {
+    width: 100%;
+    padding: 25px 17px;
+    overflow: auto;
+    white-space: nowrap;
+    border-width: initial !important;
+    border-style: none !important;
+    border-color: initial !important;
+    border-image: initial !important;
+}
+
+.lotterysectionsection3 .tabsmanin .nav-item .nav-link.active {
+    box-shadow: red 0px 0.02667rem 0.08rem inset, red 0px -0.02667rem 0.08rem inset;
+    background: linear-gradient(rgb(0, 0, 0), red);
+    border-radius: 12px;
+}
+
+.lotterysectionsection3 .tabsmanin .nav-item .nav-link .timeimage {
+    width: 40px;
+    height: 40px;
+    filter: grayscale(1);
+    margin: auto auto 10px;
+}
+
+.lotterysectionsection3 .tabsmanin .nav-item .nav-link.active .timeimage {
+    filter: none;
+}
+
+.lotterysectionsection3 .tabsmanin .nav-item .nav-link .timetext {
+    font-size: 13px;
+    color: rgb(178, 178, 178);
+}
+
+.lotterysectionsection3 .tabsmanin .nav-item .nav-link.active .timetext {
+    color: rgb(255, 255, 255);
+}
+
+.lotterysectionsection3 .tabsmanin .nav-item {
+    width: 25%;
+}
+
+.tab-content>.active {
+    display: block;
+}
+
+.lotterysectionsection3 .tabcontentsection .tab-pane .cardIn {
+    background-image: url(data:image/png;base64,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);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+}
+
+.lotterysectionsection3 .tabcontentsection .tab-pane .cardIn .innerbutton .howbtn {
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-width: 0.01333rem;
+    border-style: solid;
+    border-color: white;
+    border-image: initial;
+    gap: 0.8rem;
+}
+
+.lotterysectionsection3 .tabcontentsection .tab-pane .cardIn .innerbutton .howbtn span {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lotterysectionsection3 .tabcontentsection .tab-pane .cardIn .wintext {
+    font-size: 13px;
+    color: rgb(255, 255, 255);
+}
+
+.lotterysectionsection3 .tabcontentsection .tab-pane .cardIn .balllist {
+    padding-left: 0px;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 0.5rem;
+}
+
+.lotterysectionsection3 .tabcontentsection .tab-pane .cardIn .balllist li {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.lotterysectionsection3 .tabcontentsection .tab-pane .cardIn .timingheading {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    text-align: end;
+}
+
+.lotterysectionsection3 .tabcontentsection .tab-pane .cardIn .timingheading2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    text-align: end;
+    margin-top: 2px;
+}
+
+.lotterysectionsection3 .tabcontentsection .tab-pane .cardIn .timingheading2 span {
+    display: inline-block;
+    width: 20px;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+    margin: 0px 2px;
+}
+
+.lotterysectionsection3 .tabcontentsection .tab-pane .cardIn .timingheading3 {
+    font-size: 17px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    text-align: end;
+    letter-spacing: 1.1px;
+}
+
+.lotterysectionsection4 .cardgame {
+    background-color: rgb(255, 255, 255);
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+}
+
+.lotterysectionsection4 .cardgame .btnGreen {
+    background-color: green;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    height: 48px;
+    width: 33.333%;
+    font-weight: 600;
+}
+
+.lotterysectionsection4 .cardgame .btnviolet {
+    background-color: rgb(127, 0, 255);
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    height: 48px;
+    width: 30.333%;
+    font-weight: 600;
+}
+
+.lotterysectionsection4 .cardgame .btnRed {
+    background-color: red;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    height: 48px;
+    width: 33.333%;
+    font-weight: 600;
+}
+
+.lotterysectionsection4 .cardgame .coingame {
+    display: flex;
+    align-items: center;
+    padding-left: 0px;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(247, 248, 255);
+    gap: 0.5rem;
+    list-style: none;
+    border-radius: 12px;
+}
+
+.lotterysectionsection4 .cardgame .coingame li {
+    width: calc(16.6667%);
+    height: auto;
+}
+
+.lotterysectionsection4 .cardgame .rendomsection {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.lotterysectionsection4 .cardgame .rendomsection .inrendombtn {
+    font-size: 14px;
+    color: red;
+    font-weight: 600;
+    height: 40px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: red;
+    border-image: initial;
+    border-radius: 8px;
+}
+
+.lotterysectionsection4 .cardgame .rendomsection .smalllistbtn {
+    padding-left: 0px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 0px;
+    list-style: none;
+    gap: 0.4rem;
+}
+
+.lotterysectionsection4 .cardgame .rendomsection .smalllistbtn li button {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(166, 169, 174);
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: none;
+    padding: 3px;
+    border-radius: 8px;
+}
+
+.lotterysectionsection4 .cardgame .groupnutton {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    margin: auto;
+}
+
+.lotterysectionsection4 .cardgame .groupnutton .btn-group .btn-1 {
+    background-color: orange;
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    box-shadow: none;
+    border-radius: 30px 0px 0px 30px;
+}
+
+.lotterysectionsection4 .cardgame .groupnutton .btn-group .btn-2 {
+    background-color: rgb(109, 167, 244);
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    box-shadow: none;
+    border-radius: 0px 30px 30px 0px;
+}
+
+.bottomnavsection .nav-pills {
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.bottomnavsection .nav-pills .nav-item {
+    width: 30%;
+    flex-wrap: wrap;
+}
+
+.bottomnavsection .nav-pills .nav-item .nav-link.active {
+    color: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgb(249, 89, 89), rgb(255, 154, 142));
+}
+
+.bottomnavsection .nav-pills .nav-item .nav-link {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-weight: 600;
+    width: 100%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: red;
+    border-image: initial;
+}
+
+.bottomnavsection .nav-pills .nav-item .nav-link {
+    background-color: rgb(255, 255, 255);
+    color: rgb(118, 128, 150);
+    font-size: 14px;
+    font-weight: 600;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.tab-content>.active {
+    display: block;
+}
+
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.tablemain table thead {
+    background-color: red;
+}
+
+.table>thead {
+    vertical-align: bottom;
+}
+
+.tablemain table thead tr th {
+    color: rgb(255, 255, 255);
+    background-color: red;
+    text-align: center;
+    font-size: 12px;
+    padding: 6px 3px;
+    white-space: nowrap;
+    border-bottom: 0px;
+}
+
+.table>:not(:last-child)>:last-child>* {
+    border-bottom-color: currentColor;
+}
+
+.table>tbody {
+    vertical-align: inherit;
+}
+
+.tablemain table tbody {
+    background-color: rgb(58, 58, 58);
+}
+
+.tablemain table tbody tr {
+    background-color: rgb(255, 255, 255);
+}
+
+.tablemain table tbody tr td {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    vertical-align: bottom;
+    padding: 10px 3px;
+    white-space: nowrap;
+    border-bottom: 0.5px solid white;
+}
+
+.tablemain table tbody tr td.number {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.tablemain table tbody tr td.number.red {
+    color: red;
+}
+
+.tablemain table tbody tr td {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    vertical-align: bottom;
+    padding: 10px 3px;
+    white-space: nowrap;
+    border-bottom: 0.5px solid white;
+}
+
+.tablemain table tbody tr td .big {
+    width: 25px;
+    height: 25px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+}
+
+.tablemain table tbody tr td .dotbtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.tablemain table tbody tr td .dotbtn .dotgreen {
+    background-color: green;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255) !important;
+    border-radius: 50%;
+}
+
+.tablemain table tbody tr td .dotbtn .dotred {
+    background-color: red;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff !important;
+}
+
+.pagnationsection nav {
+    background-color: #fff;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-link {
+    padding: .375rem .75rem;
+}
+
+.page-link {
+    color: red;
+}
+
+.page-item.disabled .page-link {
+    color: #6c757d;
+    pointer-events: none;
+    background-color: #fff;
+    border-color: #dee2e6;
+}
+
+.page-item:first-child .page-link {
+    border-top-left-radius: .25rem;
+    border-bottom-left-radius: .25rem;
+}
+
+.page-item:last-child .page-link {
+    border-top-right-radius: .25rem;
+    border-bottom-right-radius: .25rem;
+    background: #fff;
+    color: red;
+    border: 1px solid gainsboro;
+}
+
+.page-item:not(:first-child) .page-link {
+    margin-left: -1px;
+}
+
+.chattabs .card .card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #f95959;
+    border-radius: 10px 10px 0 0;
+}
+
+.chattabs .card .card-header .firstchild,
+.secondchild {
+    font-size: 14px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.chattabs5D .card .card-header .firstchild,
+.secondchild {
+    font-size: 14px;
+    color: #fff;
+    font-weight: 600;
+}
+.chattabs .card .Trend__C-body1-line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.chattabs .card .Trend__C-body1-line .firsttext {
+    font-size: 14px;
+    color: #000;
+}
+.chattabs .card .Trend__C-body1-line .Trend__C-body1-line-num {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .2rem;
+}
+
+.chattabs .card .Trend__C-body1-line .Trend__C-body1-line-num .number {
+    font-size: 12px;
+    color: #f95959;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #f95959;
+    border-radius: 50px;
+}
+
+
+.chattabs .card .Trend__C-body1-line .Trend__C-body1-line-num .redVioletBg {
+    font-size: 12px;
+    color: #fff !important;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, #fd565c 50.96%, #b659fe 50.97%);
+    border-radius: 50px;
+}
