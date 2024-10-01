@@ -2122,3 +2122,74 @@ legend {
     justify-content: center;
     border: 1px solid #f95959;
 }
+
+
+/* ACTIVITY PAGE  */
+
+.headerlogin .loginimage {
+    width: 80px;
+    height: auto;
+    display: flex;
+}
+
+.headerlogin .navheading {
+    font-size: 18px;
+    color: #fff;
+}
+
+.headerlogin p {
+    font-size: 13px;
+    color: #fff;
+    margin-bottom: 0;
+}
+
+.activitysection .topiconlist {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    justify-content: space-between;
+}
+
+.activitysection .topiconlist li {
+    cursor: pointer;
+}
+
+.activitysection .topiconlist li .imagetext {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.activitysection .topiconlist li .imagetext .cardImage {
+    width: 40px;
+    height: 40px;
+    margin: auto auto 7px;
+}
+
+.activitysection .topiconlist li .imagetext .textcard {
+    font-size: 14px;
+    color: #000;
+    text-align: center;
+    font-weight: 600;
+}
+
+.activitysection .card {
+    height: 100%;
+}
+
+.activitysection .card .card-image img {
+    border-radius: 10px 10px 0 0;
+}
+
+.activitysection .card .card-heading {
+    font-size: 15px;
+    font-weight: 600;
+    color: #000;
+}
+
+.activitysection .card p {
+    font-size: 12px;
+    color: gray;
+    line-height: 17px;
+}
