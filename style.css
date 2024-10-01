@@ -2083,3 +2083,42 @@ legend {
 .accountSection.profile .notifiction .icon i {
     font-size: 17px;
 }
+
+
+/* profile details page  */
+
+.loginapp {
+    background-color: #f7f8ff;
+    overflow-y: auto;
+}
+
+.loginapp .text-theme1 {
+    color: red !important;
+}
+
+.loginapp .navsectiontab .tab-content .password {
+    position: relative;
+}
+
+.loginapp .navsectiontab .tab-content .formControl {
+    border: none;
+    height: 47px;
+    background-color: #fff !important;
+    box-shadow: none;
+    border-radius: 12px;
+}
+
+.loginapp .navsectiontab .tab-content .buttonsection2 .buttonin {
+    font-size: .48rem;
+    font-weight: 700;
+    height: 48px;
+    width: 90%;
+    margin: auto;
+    border-radius: 25px;
+    font-size: 17px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #f95959;
+}
