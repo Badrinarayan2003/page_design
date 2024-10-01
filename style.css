@@ -2178,6 +2178,10 @@ legend {
     height: 100%;
 }
 
+.activitysection .bigcard .card-image {
+    height: 100px;
+}
+
 .activitysection .card .card-image img {
     border-radius: 10px 10px 0 0;
 }
